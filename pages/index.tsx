@@ -165,7 +165,7 @@ export default function Home() {
       <Layout>
         <div className="mx-auto flex flex-col gap-4">
           <h1 className="text-2xl font-bold leading-[1.1] tracking-tighter text-center">
-            Chat With Your Legal Docs
+            Chat With The DSM-5 2013 edition
           </h1>
           <main className={styles.main}>
             <div className={styles.cloud}>
@@ -279,7 +279,7 @@ export default function Home() {
                     placeholder={
                       loading
                         ? 'Waiting for response...'
-                        : 'What is this legal case about?'
+                        : 'What are you trying to reference?'
                     }
                     value={query}
                     onChange={(e) => setQuery(e.target.value)}
@@ -316,8 +316,8 @@ export default function Home() {
           </main>
         </div>
         <footer className="m-auto p-4">
-          <a href="https://twitter.com/mayowaoshin">
-            Powered by LangChainAI. Demo built by Mayo (Twitter: @mayowaoshin).
+          <a href="https://twitter.com/own_your_path">
+            Powered by LangChainAI. Built by Open Source Recovery (Twitter: @own_your_path).
           </a>
         </footer>
       </Layout>
