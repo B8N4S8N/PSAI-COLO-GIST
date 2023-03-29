@@ -1,8 +1,16 @@
 /**
- * Change the index and namespace to your own
+ * Change the namespace to the namespace on Pinecone you'd like to store your embeddings.
  */
 
+<<<<<<< HEAD
 const PINECONE_INDEX_NAME = 'psaikala-bot';
+=======
+if (!process.env.PINECONE_INDEX_NAME) {
+  throw new Error('Missing Pinecone index name in .env file');
+}
+
+const PINECONE_INDEX_NAME = process.env.PINECONE_INDEX_NAME ?? '';
+>>>>>>> 90381f0646490486e9c73448a616e5b3de832726
 
 const PINECONE_NAME_SPACE = 'pdf-test'; //namespace is optional for your vectors
 
